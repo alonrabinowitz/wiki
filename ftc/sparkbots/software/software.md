@@ -33,6 +33,33 @@
 * Extract what you can into separate functions, and use parameters to pass information into the function
 * Only programs that are used in comp or are actively being worked on and tested should be enabled
 
+## How To Use Parts
+
+* ### Motors
+
+  * Motors have a power range from -1(reverse full speed) to 1(forward full speed), with 0 as stopped
+  * The direction can be set to reverse
+  * When controlling multiple motors that are mechanically connected in some way, like in a drivebase(connected through the ground), make sure to carefully think through the order through which you power them on and off - for example, in auton, the robot can rotate a little unpredictably, making it hard to be precise
+
+* ### Servos
+
+  * Servos can also have their direction reversed.
+  * Servos have two modes: continuous and servo
+    * In continuous mode, the servo will act like a motor
+    * In servo mode, the servo will have a range of 300˚ and should be controlled in software through the range 0-1, based on the angle you want. Servos in servo mode just go the the angle you tell them automatically and then stay there. You can also restrict the servo's range with a command.
+
+* ### Controllers
+
+  * Controller 1(start + a) is usually used for the drivebase and controller 2(start + b) is usually used for auxillary functions such as an arm and an intake
+  * Most buttons return a boolean with their status
+  * The joysticks' y-value is inverted, so make sure to account for that
+  * The triggers do not act as a button, and instead return their position within the range 0-1, with 0 meaning unpressed and 1 meaning fully pressed, with infinite positions in between
+
+* ### Sensors
+
+  * Sensors work through their own interfaces
+  * Distance sensors are not accurate against the clear walls in distances of more than ~80cm
+
 ## Other
 
-* There is a version of teleOp that has field centric movement(directions are based on the driver/field instead of the robot) on the Centerstage robot, if you want to try/use it, the IMU must be configured as "imu"
+* There is a version of teleOp that has field centric movement(directions are based on the driver/field instead of the robot) on the Centerstage robot, if you want to try/use it, the built-in IMU must be configured as "imu"
