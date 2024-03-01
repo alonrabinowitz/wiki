@@ -1,5 +1,7 @@
 # Software
 
+## [Game Manual 0](https://gm0.org/en/latest/) is a very useful resource
+
 ## Setup
 
 * The robot for the 2023-2024 season Centerstage has the network 16532-B-RC, with the password accessible from the driver station - not here for security reasons.
@@ -14,6 +16,7 @@
   * e.g. 16532-RC or 16532-A-RC
 * Driver stations must be called [team number]-[Extra identifier(not required)]-DS
   * e.g. 16532-DS or 16532-B-DS
+* You can connect to the robot's blocks and management interface by connecting to the control hub's wifi network and going to [http://192.168.43.1:8080](http://192.168.43.1:8080)
 
 ## Conventions
 
@@ -33,7 +36,7 @@
 * Extract what you can into separate functions, and use parameters to pass information into the function
 * Only programs that are used in comp or are actively being worked on and tested should be enabled
 
-## How To Use Parts
+## How to Use Parts in Code
 
 * ### Motors
 
