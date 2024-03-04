@@ -19,7 +19,7 @@
 
 ## CAD(Computer Aided Design)
 
-* For modeling robots and parts in CAD(3D) we us Onshape. You can sign up for a free education account [here](https://www.onshape.com/en/education/)
+* For modeling robots and parts in CAD(3D) we use Onshape. You can sign up for a free education account [here](https://www.onshape.com/en/education/)
 * goBilda and REV parts can usually be found in the "insert" menu by searching the product SKU#, available on the product page for the specific part/assembly
   * If you can't find it, goBilda provides STEP files for their parts
 * If you design parts for 3D printing, make sure to round inside corners, which can be done using the fillet tool

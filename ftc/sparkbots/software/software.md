@@ -9,7 +9,7 @@
   * All components should be named with descriptive names that are easy to understand in code, and documented somewhere
   * Motors go under the motors category, make sure to select the correct goBilda motor type
   * Servos go under the servo category, make sure to select the correct goBilda servo type if it exists, otherwise select the generic servo option
-  * Sensors go in the I<sup>2</sup>C (I2C) buses, with only 1 device per bus if connected directly to the control/expansion hub
+  * Sensors go in the I2C buses, with only 1 device per bus if connected directly to the control/expansion hub
     * The built-in IMU(Inertial Measurement Unit - includes the gyro and accelerometer) on the control hub can only be used on I2C bus 0. Some of the control hubs have the BNO055 and some have the BHI260AP, so you will have to try both. The Control hub on the 2023-2024 Centerstage robot(16532-B-RC) has the BHI260AP IMU.
   * Cameras show up in the configuration outside of a control/expansion hub
 * Robot Wi-Fi networks must be called [team number]-[Extra identifier(not required)]-RC
